@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCard"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:id="@+id/recImage"
+            android:layout_marginStart="20dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pfp"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/recName"
+            android:text="Name :"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/recAge"
+            android:text="Age :"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/recCity"
+            android:text="City :"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/recSkill"
+            android:text="Skills :"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/recSalary"
+            android:text="Req. Wage :"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_marginTop="85dp"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/recType"
+            android:text="Type :"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/recEducation"
+            android:text="Education :"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/recCV"
+            android:text="CV :"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/recEmail"
+            android:text="Email :"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/recPhone"
+            android:text="Phone :"
+            android:textSize="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

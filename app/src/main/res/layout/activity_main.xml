@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgblack"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        android:layout_above="@+id/recyclerView">
+    </com.google.android.gms.ads.AdView>
+
+
+    <androidx.appcompat.widget.SearchView
+        android:backgroundTint="@color/white"
+        android:id="@+id/search"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/yellow_border"
+        android:focusable="false"
+        app:closeIcon="@drawable/baseline_clear_24"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search..."
+        app:searchHintIcon="@null"
+        app:searchIcon="@drawable/baseline_search_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="12dp"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="50dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/purple"
+        android:src="@drawable/baseline_account_circle_24"
+        android:tint="@color/black" />
+
+
+</RelativeLayout>
